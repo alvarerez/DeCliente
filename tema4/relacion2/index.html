@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>
+    rela 2
+    </title>    
+      
+    
+</head>
+<body >
+
+    <script>
+    function cambiaMas(){
+    document.getElementById("texto").style.fontSize = "xx-large";
+}
+
+function cambiaMenos(){
+    document.getElementById("texto").style.fontSize = "xx-small";
+//    cambia();
+}
+
+
+function defecto(){
+    document.getElementById("texto").style.fontSize="medium";
+}
+    
+    </script>
+    
+     <div id="texto">
+        <p > esto es un parrafo</p> 
+         <p> esto es otro parrafo</p>
+        <p> esto es otro mas parrafo</p>
+        <p> esto es un parrafo4</p>    
+        </div>
+        <button type="button" onclick="cambiaMas()">Aumenta</button>
+        <button type="button" onclick="cambiaMenos()">Disminuye</button>
+<button type="button" onclick="defecto()">Defecto</button>
+    
+    
+</body>
+</html>

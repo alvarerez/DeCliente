@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>
+    ejer 10
+    </title>    
+   
+</head>
+<body >
+    
+    
+<script type="text/javascript">
+   var imagenPinchada = false;
+   document.addEventListener('mousemove', function(e) {
+     if (imagenPinchada){
+       x.hspace = e.clientX || e.pageX;
+       x.vspace = e.clientY || e.pageY;
+   }
+   }, false);
+   window.onmouseup = soltar;
+   function soltar() {
+     imagenPinchada = false;
+   }
+ var x;
+   function mueve(imagen) {
+     x = imagen;
+     imagenPinchada = true;
+  }
+</script>
+    
+    
+<img src="pinguino1.jpg" style="position: absolute;" onmousedown="mueve(this)"/>
+<!--<img src="pinguino2.jpg" style="position: absolute;" onmousedown="mueve(this)"/>-->
+<img src="pinguino3.jpg" style="position: absolute;" onmousedown="mueve(this)" />
+<img src="pinguino4.jpg" style="position: absolute;" onmousedown="mueve(this)" />
+
+
+</body>
+</html>

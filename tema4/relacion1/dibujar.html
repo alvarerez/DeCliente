@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>
+    dibujo
+    </title>    
+  
+   
+</head>
+<body onload="carga()"  >
+    
+   
+    
+    <script>
+        
+      function carga(){
+          document.write("<table border=1 >");
+          var z=1;
+          for(var i=0;i<=20;i++){
+              document.write("<tr>");
+              for(var j=0;j<=20;j++){
+                  
+                  document.write("<td id="+z+" onmousemove='colorear(this)' width=50 height=50  >     </td>");
+                  z++;
+              }
+              document.write("</tr>");
+          }
+          document.write("</table>");
+//          document.write("  <button  type='button' onclick='borrar()'> limpia </button>")
+      } 
+//         document.addEventListener('mousemove', function(e)
+     
+                                   
+     function colorear(celda) {
+             if (event.shiftKey == true) {
+                 celda.style.backgroundColor = "Blue";
+                }
+             if (event.ctrlKey == true) {
+                 celda.style.backgroundColor = "pink";
+                }
+             if (event.buttons == 4 ) {
+                 celda.style.backgroundColor = "white";
+                }
+          if(event.altKey== true){
+            for(var i=1;i<=441;i++){
+              
+            document.getElementById(i).style.backgroundColor = "white";
+            
+            }
+            }
+     }
+//        function borrar(){
+////            if(event.altKey== true){
+////            for(var i=0;i<=441;i++){
+////              
+////            document.getElementById(i).style.backgroundColor = "white";
+////            
+////            }
+////        }
+//        }
+</script>
+</body>
+</html>
