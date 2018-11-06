@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Ejercicio 4</title>
+    <script >
+    function inserta(){
+      var nuevoElemento = document.getElementById("meter").value;
+      lista.innerHTML = lista.innerHTML + "<li>"+nuevoElemento+"</li>";
+}
+    
+    </script>
+</head>
+<body>
+    <ul id=lista>
+        <li>lista1</li>
+        <li>lista2</li>
+        <li>lista3</li>
+        <li>lista4</li>
+    </ul>
+    <label for="listado">elemento a introducir:</label>
+    <input id= "meter" type="text" name="mete">
+    <input type="button" value="Insertar" onclick="inserta(event);">
+   
+</body>
+
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Ejercicio 5</title>
+    <script >
+    function nuevaSubida() {
+      var subida = document.createElement('input');
+      var boton = document.createElement('button');
+        var otro = document.createElement('button');
+      var salto = document.createElement('br');
+      boton.innerHTML = "Enviar";
+        otro.innerHTML = "Subirmas"
+      subida.type = "file";
+      subida.name = "Subir";
+      otro.onclick = nuevaSubida;
+      document.body.appendChild(salto);
+      document.body.appendChild(subida);
+      document.body.appendChild(boton);
+}
+    
+    
+    </script>
+</head>
+<body>
+    <form id='formulario'>
+    <input id= "introduce" type="file" name="introduce">
+        <input type="button" value="Adjuntar otro fichero" onclick="nuevaSubida()">
+        <button type=button onclick='alert("Archivo enviado")'>Enviar</button>
+    </form>
+</body>
+</html>

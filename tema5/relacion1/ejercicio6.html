@@ -1,0 +1,41 @@
+
+<html>
+<head>
+<title>Presentación</title>
+<script>
+    
+   imagenes=["pinguino1.jpg",
+          "pinguino2.jpg",
+          "pinguino3.jpg",
+          "pinguino4.jpg"]
+
+function anterior(){
+    var imagen = document.getElementById('imagen').getAttribute('src');
+    var pos = imagenes.indexOf(imagen);
+    if (pos == 0){
+        document.getElementById('imagen').setAttribute('src',imagenes[imagenes.length-1]);
+    }else{
+    document.getElementById('imagen').setAttribute('src',imagenes[pos-1]);
+    }
+}
+
+function siguiente(){
+    var imagen = document.getElementById('imagen').getAttribute('src');
+    var pos = imagenes.indexOf(imagen);
+    if (pos == imagenes.length-1){
+        document.getElementById('imagen').setAttribute('src',imagenes[0]);
+    }else{
+    document.getElementById('imagen').setAttribute('src',imagenes[pos+1]);
+    }
+}
+    
+    </script>
+</head>
+<body>
+<h1>Galeria</h1>
+<button onclick='anterior()'>Anterior</button>
+        <button onclick='siguiente()'>Siguiente</button>
+        <br><br>
+<img id='imagen' src="pinguino1.jpg">
+</body>
+</html>
