@@ -1,0 +1,6 @@
+ws1 = 1,2,3,5
+ws2 =1,5,7,8
+ws3=1,2,7,9
+ws 1,2
+abre una nueva url con location
+ws6  2c,2d,2e,2f
